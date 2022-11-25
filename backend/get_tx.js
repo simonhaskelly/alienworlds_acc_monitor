@@ -6,12 +6,10 @@ const router = express.Router()
 
 const base_api = [
     'https://wax.cryptolions.io',
-    'https://api.wax.alohaeos.com',
     'https://waxapi.ledgerwise.io',
 ]
 
 const v2_api = [
-    'https://api.wax.alohaeos.com',
     'https://wax.eu.eosamsterdam.net',
     'https://api.waxsweden.org',
     'https://wax.cryptolions.io'

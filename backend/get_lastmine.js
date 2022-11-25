@@ -7,10 +7,8 @@ const router = express.Router()
 const base_api = [
     'https://wax.pink.gg',
     'https://wax.cryptolions.io',
-    'https://wax.dapplica.io',
     'https://api.wax.liquidstudios.io',
     'https://wax.eosn.io',
-    'https://api.wax.alohaeos.com',
     'https://wax.eu.eosamsterdam.net',
     'https://wax.eosphere.io',
     'https://api.waxeastern.cn'

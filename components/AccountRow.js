@@ -5,10 +5,8 @@ import delay from 'delay'
 const v1 = [
     'https://wax.pink.gg',
     'https://wax.cryptolions.io',
-    'https://wax.dapplica.io',
     'https://api.wax.liquidstudios.io',
     'https://wax.eosn.io',
-    'https://api.wax.alohaeos.com',
     'https://wax.eu.eosamsterdam.net',
     'https://wax.eosphere.io',
     'https://api.waxeastern.cn'
@@ -16,12 +14,10 @@ const v1 = [
 
 const tx_api = [
     'https://wax.cryptolions.io',
-    'https://api.wax.alohaeos.com',
     'https://waxapi.ledgerwise.io',
 ]
 
 const tx_api_v2 = [
-    'https://api.wax.alohaeos.com',
     'https://wax.eu.eosamsterdam.net',
     'https://api.waxsweden.org',
     'https://wax.cryptolions.io'
