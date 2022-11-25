@@ -5,10 +5,8 @@ const axios = require('./axios')
 const router = express.Router()
 
 const base_api = [
-    'https://wax.greymass.com',
     'https://wax.cryptolions.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.blacklusion.io',
     'https://waxapi.ledgerwise.io',
 ]
 

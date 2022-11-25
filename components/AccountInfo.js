@@ -9,12 +9,7 @@ const v1 = [
     'https://api.wax.liquidstudios.io',
     'https://wax.eosn.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.greymass.com',
-    'https://wax-bp.wizardsguild.one',
-    'https://apiwax.3dkrender.com',
     'https://wax.eu.eosamsterdam.net',
-    'https://wax.csx.io',
-    'https://wax.eoseoul.io',
     'https://wax.eosphere.io',
     'https://api.waxeastern.cn'
 ]
@@ -23,7 +18,6 @@ const tx_api = [
     'https://wax.greymass.com',
     'https://wax.cryptolions.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.blacklusion.io',
     'https://waxapi.ledgerwise.io',
 ]
 
@@ -261,7 +255,7 @@ export default function AccountInfo(props) {
             setLastMine(newLastMine)
         }
     }
-    
+
     const fetchLastMineTx = async (tx) => {
         let api_index = getRandom(0, tx_api.length)
         let tries = 0

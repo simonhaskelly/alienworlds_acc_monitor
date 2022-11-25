@@ -10,8 +10,6 @@ const base_api = [
     'https://wax.dapplica.io',
     'https://wax.eosn.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.greymass.com',
-    'https://wax.eoseoul.io'
 ]
 
 function getRandom(min, max) {

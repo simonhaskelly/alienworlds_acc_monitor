@@ -9,21 +9,14 @@ const v1 = [
     'https://api.wax.liquidstudios.io',
     'https://wax.eosn.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.greymass.com',
-    'https://wax-bp.wizardsguild.one',
-    'https://apiwax.3dkrender.com',
     'https://wax.eu.eosamsterdam.net',
-    'https://wax.csx.io',
-    'https://wax.eoseoul.io',
     'https://wax.eosphere.io',
     'https://api.waxeastern.cn'
 ]
 
 const tx_api = [
-    'https://wax.greymass.com',
     'https://wax.cryptolions.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.blacklusion.io',
     'https://waxapi.ledgerwise.io',
 ]
 
@@ -262,7 +255,7 @@ export default function AccountRow(props) {
             setLastMine(newLastMine)
         }
     }
-    
+
     const fetchLastMineTx = async (tx) => {
         let api_index = getRandom(0, tx_api.length)
         let tries = 0
@@ -454,8 +447,8 @@ export default function AccountRow(props) {
     const percent = accInfo.used ? rawPercent > 100 ? 100 : rawPercent : 0
     const barColor = percent >= 80 ? "bg-red-600" : percent >= 50 ? "bg-yellow-600" : "bg-blue-600"
     const bgRow = index%2!=0 ? "bg-gray-600" : ""
-    const lastMineBg = lastMine.last_mine.includes('month') || lastMine.last_mine.includes('day') ? 
-    'bg-red-700' : 
+    const lastMineBg = lastMine.last_mine.includes('month') || lastMine.last_mine.includes('day') ?
+    'bg-red-700' :
     lastMine.last_mine.includes('hour') ? 'bg-yellow-600' : 'bg-blue-600'
 
     return (
@@ -482,16 +475,16 @@ export default function AccountRow(props) {
                 <td>{balance} TLM</td>
                 <td>{wax} WAX</td>
                 <td><span className={`text-sm font-bold px-2 rounded-md whitespace-nowrap `+lastMineBg}>{lastMine.last_mine}</span>
-                <br/>{history[0] ? 
+                <br/>{history[0] ?
                 <span
                 className={'inline-flex items-center justify-center font-bold text-xs'}>
                 {history[0].amount}
                 </span> : ''}</td>
                 <td className="text-xs">{update}</td>
                 <td>
-                <a 
-                className="inline-flex items-center h-8 px-4 m-2 text-sm text-white font-bold transition-colors 
-                duration-150 bg-green-600 rounded-lg focus:shadow-outline hover:bg-green-800" 
+                <a
+                className="inline-flex items-center h-8 px-4 m-2 text-sm text-white font-bold transition-colors
+                duration-150 bg-green-600 rounded-lg focus:shadow-outline hover:bg-green-800"
                 href={'https://wax.atomichub.io/explorer/account/'+acc}
                 rel="noopener noreferrer" target="_blank">NFT</a>
                 <br />

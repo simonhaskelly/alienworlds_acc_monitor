@@ -11,7 +11,6 @@ const base_api = [
     'https://api.wax.liquidstudios.io',
     'https://wax.eosn.io',
     'https://api.wax.alohaeos.com',
-    'https://wax.greymass.com'
 ]
 
 function getRandom(min, max) {
